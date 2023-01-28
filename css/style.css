@@ -4,6 +4,7 @@
 
 body {
   background: rgb(1, 1, 35);
+  font-family: "Comfortaa", cursive;
 }
 
 nav {
@@ -49,14 +50,15 @@ p {
   text-shadow: 2px 2px #af3264;
 }
 .content-container {
-  padding: 160px 20px;
+  padding: 120px 20px 80px 20px;
 }
 .content {
   margin: 30px;
+  padding-top: 40px;
 }
 
 .name {
-  font-size: 90px;
+  font-size: 80px;
   color: var(--main-color);
   text-shadow: 2px 2px #af3264;
 }
@@ -139,6 +141,12 @@ p {
     rgba(101, 24, 180, 1)
   );
   background-size: 400%;
+}
+
+.made-by {
+  color: white;
+  text-align: center;
+  font-size: 10px;
 }
 .about-paragraphs p {
   margin: 10px;
