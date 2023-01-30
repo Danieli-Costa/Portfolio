@@ -1,7 +1,6 @@
 :root {
   --main-color: rgb(16, 249, 249);
 }
-
 body {
   background: rgb(1, 1, 35);
   font-family: "Comfortaa", cursive;
@@ -35,7 +34,8 @@ nav a:hover {
 }
 
 h2 {
-  color: white;
+  color: var(--main-color);
+  text-shadow: 2px 2px #af3264;
 }
 
 h3 {
@@ -46,6 +46,8 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
+  color: white;
+  margin: 40px;
 }
 
 .logo-small {
@@ -153,63 +155,24 @@ p {
   font-size: 10px;
 }
 
-.about-paragraphs p {
-  margin: 10px;
+.about-container {
+  padding: 120px 20px 110px;
 }
 
-.navigation-links {
+.skills-container {
   display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-.navigation-links a {
-  margin: 20px;
-}
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
+  margin: 32px;
+  padding: 10px;
 }
 
-.about-paragraphs {
-  margin: 30px 0;
-}
-
-.email-link {
+.skills-items {
+  flex-wrap: wrap;
+  gap: 80px 150px;
+  position: relative;
   display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 20px;
-  text-decoration: none;
 }
 
-.email-link:hover {
-  text-decoration: underline;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+.github-icon {
+  font-size: 80px;
+  color: rgba(147, 88, 247, 1);
 }
