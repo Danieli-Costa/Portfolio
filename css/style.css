@@ -98,7 +98,6 @@ p {
   letter-spacing: 1.5px;
   height: 40px;
 }
-
 .github-button {
   display: flex;
   align-items: center;
@@ -116,19 +115,6 @@ p {
   height: 40px;
 }
 
-.linkedin-button::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: -2px;
-  border-radius: 9px;
-  background: linear-gradient(
-    -45deg,
-    rgba(147, 88, 247, 1),
-    rgba(16, 215, 226, 1)
-  );
-  background-size: 400%;
-}
 .github-button::before {
   content: "";
   position: absolute;
@@ -143,11 +129,26 @@ p {
   background-size: 400%;
 }
 
+.linkedin-button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -2px;
+  border-radius: 9px;
+  background: linear-gradient(
+    -45deg,
+    rgba(147, 88, 247, 1),
+    rgba(16, 215, 226, 1)
+  );
+  background-size: 400%;
+}
+
 .made-by {
   color: white;
   text-align: center;
   font-size: 10px;
 }
+
 .about-paragraphs p {
   margin: 10px;
 }
