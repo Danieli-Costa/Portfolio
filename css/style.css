@@ -51,7 +51,7 @@ h3 {
   text-shadow: 2px 2px #af3264;
 }
 .content-container {
-  padding: 120px 20px 80px 20px;
+  padding: 110px 20px 110px 20px;
 }
 .content {
   margin: 30px;
@@ -149,7 +149,7 @@ h3 {
 }
 
 .about-container {
-  padding: 75px 20px 80px;
+  padding: 60px 20px 30px;
 }
 .about-paragraph {
   font-size: 20px;
@@ -181,8 +181,8 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10%;
-  margin: 50px;
-  padding: 30px;
+  margin: 50px 50px 40px;
+  padding: 30px 30px 25px;
 }
 
 .weather-app-image {
@@ -208,4 +208,15 @@ h3 {
 
 .coming-soon-image {
   width: 50%;
+}
+
+.contact-links a {
+  justify-content: space-evenly;
+  margin: 0 20px;
+  color: var(--title-color);
+  font-size: 20px;
+  padding: 5px;
+}
+
+@media (max-width: 576px) {
 }
