@@ -1,8 +1,10 @@
 :root {
-  --main-color: rgb(16, 249, 249);
+  --title-color: rgb(16, 249, 249);
+  --main-color: #fafafa;
+  --background-color: rgb(1, 1, 35);
 }
 body {
-  background: rgb(1, 1, 35);
+  background: var(--background-color);
   font-family: "Comfortaa", cursive;
 }
 
@@ -24,35 +26,28 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: var(--main-color);
   transition: all 100ms ease-in-out;
 }
 
 nav a:hover {
-  color: var(--main-color);
+  color: var(--title-color);
   text-shadow: 2px 2px #af3264;
 }
 
 h2 {
-  color: var(--main-color);
+  color: var(--title-color);
   text-shadow: 2px 2px #af3264;
 }
 
 h3 {
   font-size: 24px;
-  color: white;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: white;
-  margin: 40px;
+  color: var(--main-color);
 }
 
 .logo-small {
   font-size: 25px;
-  color: var(--main-color);
+  color: var(--title-color);
   text-shadow: 2px 2px #af3264;
 }
 .content-container {
@@ -65,7 +60,7 @@ p {
 
 .name {
   font-size: 80px;
-  color: var(--main-color);
+  color: var(--title-color);
   text-shadow: 2px 2px #af3264;
 }
 .developer {
@@ -85,7 +80,7 @@ p {
 }
 .contact-button a {
   text-decoration: none;
-  color: white;
+  color: var(--main-color);
 }
 
 .linkedin-button {
@@ -96,9 +91,8 @@ p {
   width: 140px;
   border-radius: 8px;
   position: relative;
-  background-color: rgb(1, 1, 35);
+  background-color: var(--background-color);
   margin-top: 1rem;
-  transition: 0.3s;
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 1.5px;
@@ -112,9 +106,8 @@ p {
   width: 140px;
   border-radius: 8px;
   position: relative;
-  background-color: rgb(1, 1, 35);
+  background-color: var(--background-color);
   margin-top: 1rem;
-  transition: 0.3s;
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 1.5px;
@@ -150,13 +143,19 @@ p {
 }
 
 .made-by {
-  color: white;
+  color: var(--main-color);
   text-align: center;
   font-size: 10px;
 }
 
 .about-container {
   padding: 120px 20px 110px;
+}
+.about-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--main-color);
+  margin: 40px;
 }
 
 .skills-container {
@@ -175,4 +174,37 @@ p {
 .github-icon {
   font-size: 80px;
   color: rgba(147, 88, 247, 1);
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10%;
+  margin: 50px;
+  padding: 20px;
+}
+
+.weather-app-image {
+  width: 80%;
+  border-radius: 25px;
+}
+
+.project-titlle {
+  color: var(--title-color);
+  text-shadow: 1px 1px #af3264;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  display: block;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.project-description {
+  color: var(--main-color);
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.coming-soon-image {
+  width: 50%;
 }
