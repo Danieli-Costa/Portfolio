@@ -149,13 +149,14 @@ h3 {
 }
 
 .about-container {
-  padding: 120px 20px 110px;
+  padding: 75px 20px 80px;
 }
 .about-paragraph {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   color: var(--main-color);
   margin: 40px;
+  letter-spacing: 1.5px;
 }
 
 .skills-container {
@@ -181,7 +182,7 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10%;
   margin: 50px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .weather-app-image {
