@@ -2,6 +2,7 @@
   --title-color: rgb(16, 249, 249);
   --main-color: #fafafa;
   --background-color: rgb(1, 1, 35);
+  --border-color: #af3264;
 }
 body {
   background: var(--background-color);
@@ -30,14 +31,15 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 
-nav a:hover {
+nav a:hover,
+nav li.active a {
   color: var(--title-color);
-  text-shadow: 2px 2px #af3264;
+  text-shadow: 1.5px 1.1px var(--border-color);
 }
 
 h2 {
   color: var(--title-color);
-  text-shadow: 2px 2px #af3264;
+  text-shadow: 2px 2px var(--border-color);
 }
 
 h3 {
@@ -48,7 +50,7 @@ h3 {
 .logo-small {
   font-size: 25px;
   color: var(--title-color);
-  text-shadow: 2px 2px #af3264;
+  text-shadow: 2px 1.1px var(--border-color);
 }
 .content-container {
   padding: 110px 20px 110px 20px;
@@ -61,7 +63,7 @@ h3 {
 .name {
   font-size: 80px;
   color: var(--title-color);
-  text-shadow: 2px 2px #af3264;
+  text-shadow: 2px 2px var(--border-color);
 }
 .developer {
   margin: 0px 0px 0px 40px;
@@ -72,7 +74,7 @@ h3 {
   transition: all 100ms ease-in-out;
 }
 .profile-picture:hover {
-  box-shadow: 5px -5px 10px #af3264;
+  box-shadow: 5px -5px 10px var(--border-color);
 }
 .contact-button {
   display: flex;
@@ -181,8 +183,8 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10%;
-  margin: 50px 50px 40px;
-  padding: 30px 30px 25px;
+  margin: 30px;
+  padding: 26px;
 }
 
 .weather-app-image {
@@ -192,7 +194,7 @@ h3 {
 
 .project-titlle {
   color: var(--title-color);
-  text-shadow: 1px 1px #af3264;
+  text-shadow: 1px 1px var(--border-color);
   margin-top: 10px;
   margin-bottom: 8px;
   display: block;
@@ -200,10 +202,26 @@ h3 {
   font-size: 25px;
 }
 
+.project-titlle:hover {
+  color: var(--title-color);
+}
+
 .project-description {
   color: var(--main-color);
   font-size: 13px;
   line-height: 25px;
+}
+
+.btn-project {
+  border: 3px solid var(--title-color);
+  text-decoration: none;
+  color: var(--main-color);
+  text-shadow: 1px 1px var(--border-color);
+}
+
+.btn-project:hover {
+  border: 3px solid var(--border-color);
+  color: var(--main-color);
 }
 
 .coming-soon-image {
@@ -218,5 +236,95 @@ h3 {
   padding: 5px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 900px) {
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+
+  nav li.active a {
+    text-shadow: 2px 1px var(--border-color);
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+  .logo-small {
+    margin-top: 9px;
+    font-size: 20px;
+    text-shadow: 2px 1px var(--border-color);
+    margin-left: 5px;
+  }
+
+  .content-container {
+    padding: 35px 20px;
+    text-align: center;
+  }
+
+  .developer {
+    margin: 0;
+  }
+
+  .contact-button {
+    padding: 20px 0;
+  }
+
+  .name {
+    font-size: 42px;
+  }
+
+  .profile-picture {
+    padding: 40px 10px;
+    border-radius: 80px;
+  }
+
+  .about-container {
+    padding: 40px 20px;
+  }
+
+  .about-paragraph {
+    font-size: 18px;
+    letter-spacing: normal;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .skills-container {
+    margin: 15px;
+    padding: 0;
+  }
+
+  .skills-items {
+    gap: 15px 50px;
+    justify-content: center;
+  }
+
+  .skills-items img {
+    width: 50px;
+  }
+
+  .github-icon {
+    font-size: 50px;
+  }
+
+  .work-container {
+    margin: 30px 20px;
+    padding: 10px;
+    display: block;
+  }
+
+  .project-description {
+    font-size: 18px;
+  }
+
+  .weather-app-image {
+    width: 90%;
+  }
+
+  .work {
+    padding: 40px 0px 90px 0px;
+  }
 }
