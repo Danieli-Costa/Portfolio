@@ -184,7 +184,7 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10%;
   margin: 30px;
-  padding: 26px;
+  padding: 20px;
 }
 
 .weather-app-image {
